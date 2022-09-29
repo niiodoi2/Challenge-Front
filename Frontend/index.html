@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/Hero Logo Variation.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Hero Logo Variation.svg">
     <title>Frontend Challenge</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'> -->
 </head>
 <body>
     <div class="content">
-        <div class="navbar">
-            <div class="container">
-            <!-- logo -->
-                <div class="logo">
-                    <a href="/"><img src="assets/images/Hero Logo Variation.svg" alt="" srcset=""></a>
-                </div>
-                <!-- navigation menu -->
-                <div class="navbar-menu">
-                    <ul class="nav-links">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#fans">For Fans</a></li>
-                        <li><a href="#influencer">For influencers</a></li>
-                        <li><a href="#feature">Features</a></li>
-                        <li><a href="/">FAQ's</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+
+            <!-- LOGO -->
+            <div class="logo">
+               <a href="/"><img src="assets/images/Hero Logo Variation.svg" alt="" srcset=""></a>
             </div>
-        </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+              <!-- USING CHECKBOX HACK -->
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#fans">For Fans</a></li>
+                <li><a href="#influencers">For Influencers</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#faqs">FAQ's</a></li>
+              </div>
+            </ul>
+          </nav>
     <div class="hero-section">
-        <div class="container">
-            <div class="slogan">
-                <h3> Build direct,<br> meaningful <br> connections</h3>
-                <p>Ear1 helps you connect directly with your favourite influencers <br> for a small fee. What’s more? We assure you of getting a reply.</p>
+        
+            <div class="hero-header">
+                <h3> Build direct, <br> meaningful <br> connections</h3>
+                <p>Ear1 helps you connect directly with your favourite influencers for a small fee. What’s more? We assure you of getting a reply.</p>
             </div>
             <div class="store-button">
                 <a type="button" href="#"><img src="assets/images/Playstore Button.svg" alt="" srcset=""></a>
                 <a type="button" href="#"><img src="assets/images/Appstore Button.svg" alt="" srcset=""></a>
             </div>
             <div class="phones">
-                <div class="matte1">
-                    <img src="assets/images/Black Matte 1.png" alt="" srcset="">
-                </div>
-                <div class="matte2">
-                    <img src="assets/images/BlackM.png" alt="">
-                </div>
-                <div class="matte3">
-                    <img src="assets/images/Black Matte 2.png" alt="" srcset="">
-                </div>
-            </div>    
+            <div class="matte1">
+                <img src="assets/images/Black Matte 1.png" alt="" srcset="">
+            </div>
+            <div class="matte2">
+                <img src="assets/images/BlackM.png" alt="">
+            </div>
+            <div class="matte3">
+                <img src="assets/images/Black Matte 2.png" alt="" srcset="">
+            </div>
+            </div>  
             
-        </div>
+        
     </div>
     <div class="about-section">
         <div class="bg-picture">
@@ -173,18 +177,78 @@
                 <img src="assets/images/Blackmatte4.png" alt="hmm" >
             </div>
         </div>
-    </div>
-    <div class="middle">
-        <img src="assets/images/frame1.png" alt="" srcset="">
+        <div class="middle">
+            <img src="assets/images/frame1.png" alt="" srcset="" style="width: 85vw;">
+        </div>
     </div>
     <div class="footer">
         <hr>
-            <div class="footer-nav">
-                <img src="assets/images/footerH.png" alt="" srcset="">
+        <div class="footer-nav">
+            <p><b>Be in the know.</b> <span>Get access to amazing offers and discounts</span></p>
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Enter your email address" name="search">
+                <button type="submit"><i class="fa fa-search"></i>SUBMIT</button>
+            </form>
+        </div>
+        
+
+            
+            
+            
+        <div class="footer-icon">
+            <div class="fone">
+                <img src="assets/images/Footer Logo Variation.svg" alt="" srcset="">
+                <div class="social-media">
+                    <img src="assets/images/Facebook Icon.svg" alt="" srcset="">
+                    <img src="assets/images/Twitter Icon.svg" alt="" srcset="">
+                    <img src="assets/images/Instagram Icon.svg" alt="" srcset="">
+                </div>
             </div>
-            <div class="footer-icon">
-                <img src="assets/images/Group 44.png" alt="">
+            <div class="ftwo">
+                <div class="header">Links</div>
+                <div class="linkes">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">For fans</a></li>
+                        <li><a href="/">For influencers</a></li>
+                        <li><a href="/">FAQ’s</a></li>
+
+                    </ul>
+                </div>
+                
             </div>
+            <div class="fthree">
+                <div class="header">Get help</div>
+                <div class="linkes">
+                    <ul>
+                        <li><a href="/">Support</a></li>
+                        <li><a href="/">FAQ’s</a></li>
+                        <li><a href="/">Partnership</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="four">
+                <div class="header">Download</div>
+                <div class="linkes">
+                    <ul>
+                        <li><a href="/">Andriod</a></li>
+                        <li><a href="/">IOS</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="five">
+                <div class="header">Resources</div>
+                <div class="linkes">
+                    <ul>
+                        <li><a href="/">Terms of service</a></li>
+                        <li><a href="/">Privacy policy</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
         
     </div>
     </div>
